@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="260dp"
+          android:layout_marginLeft="15dp"
+          android:layout_marginBottom="15dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginRight="15dp"
+          android:id="@+id/cardview1"
+          app:cardElevation="10dp"
+          app:cardCornerRadius="15dp">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="2"
+              android:orientation="horizontal">
+
+
+              <org.eazegraph.lib.charts.PieChart
+                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                  android:id="@+id/piechart_id"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:padding="7dp"
+                  android:layout_weight="1"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginBottom="10dp"
+                  android:layout_marginRight="10dp" />
+              
+              <LinearLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:orientation="vertical"
+                  android:layout_margin="10dp"
+                  android:gravity="center_vertical">
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="15dp"
+                      android:orientation="horizontal">
+
+                      <View
+                          android:layout_width="15dp"
+                          android:layout_height="match_parent"
+                          android:background="@color/cases"/>
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Total Cases"
+                          android:paddingLeft="10dp"
+                          android:id="@+id/totalcases"/>
+
+
+
+                  </LinearLayout>
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="15dp"
+                      android:orientation="horizontal"
+                      android:layout_marginTop="10dp">
+
+                      <View
+                          android:layout_width="15dp"
+                          android:layout_height="match_parent"
+                          android:background="@color/recovered"/>
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Recovered"
+                          android:paddingLeft="10dp"
+                          android:id="@+id/recovered"/>
+
+
+
+                  </LinearLayout>
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="15dp"
+                      android:orientation="horizontal"
+                      android:layout_marginTop="10dp">
+
+                      <View
+                          android:layout_width="15dp"
+                          android:layout_height="match_parent"
+                          android:background="@color/deaths"/>
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Deaths"
+                          android:paddingLeft="10dp"
+                          android:id="@+id/deaths"/>
+
+
+
+                  </LinearLayout>
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="15dp"
+                      android:orientation="horizontal"
+                      android:layout_marginTop="10dp">
+
+                      <View
+                          android:layout_width="15dp"
+                          android:layout_height="match_parent"
+                          android:background="@color/active"/>
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Active"
+                          android:paddingLeft="10dp"
+                          android:id="@+id/active"/>
+
+
+
+                  </LinearLayout>
+
+
+
+
+
+
+
+              </LinearLayout>
+
+
+
+          </LinearLayout>
+
+
+
+
+
+
+      </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
